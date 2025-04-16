@@ -1,0 +1,8 @@
+# Ignora dependências
+node_modules/
+
+# Ignora arquivos temporários de build do TypeScript
+*.tsbuildinfo
+
+# NÃO ignore dist (ele precisa ser commitado!)
+# dist/
