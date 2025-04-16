@@ -1,11 +1,12 @@
-import { BaseEntity, SoftDelete } from '../base';
+import { SoftDelete } from '../base';
 /**
  * User Data Transfer Object
  * Mantido nome em inglês para compatibilidade com o sistema de autenticação.
- * @extends BaseEntity
+
  * @extends SoftDelete
  */
-export interface UserDto extends BaseEntity, SoftDelete {
+export interface UserDto extends SoftDelete {
+    id: string;
     email: string;
     nome?: string;
     perfilId?: number;
