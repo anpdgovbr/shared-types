@@ -11,5 +11,5 @@ export interface UserDto extends BaseEntity, SoftDelete {
   nome?: string
   perfilId?: number
   image?: string
-  responsavelId?: number | null
+  responsavelId?: number | null //específico do backlog-dim, indica o link entre o User e o Responsável (nome do User no csv de importação)
 }
